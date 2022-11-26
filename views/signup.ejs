@@ -1,0 +1,61 @@
+<%-include("partials/header")-%>
+
+
+<div id="container">
+    <div id="two">
+
+        <form action = "/signup" method = "post">
+            <div id="fdiv1"><label for="sdd">NAME :</label></div>
+            <div id="fdiv2"><input type="text" placeholder="Enter your name" name="name" id="sdd"></div><br><br>
+            
+
+                <div id="fdiv3">Gender : </div>
+                    <select name = "gender">
+                    <option>Select</option>
+                    <option value="male">
+                        MALE</option>
+                    <option value="female">FEMALE</option>
+             
+                </select><br><br>
+
+
+
+                <div id="fdiv4">Age :</div>
+                <select name = "age">
+                    <option>Select</option>
+                    <option value="greater than 18">
+                        greater than 18  </option>
+                    <option value="18">18</option>
+                    <option value=">18"> >18 </option>
+                </select><br><br>
+
+                <div id="fdiv5">E-Mail ID : </div>
+                <div id ="fdiv6"><input type="email" name = "emailId" placeholder="abc@abc.com"></div><br><br>
+                <div id="fdiv7">D.O.B. : </div>
+                <div id = "fdiv8"><input name = "date" type="date"></div><br>
+                <div id="fdiv9">Create Password : </div>
+                <div id ="fdiv10"><input name = "password" type="Password"></div><br><br>
+                
+                
+
+            <div id ="div13">
+               <button type = "submit">SUBMIT</button> 
+                <button type = "reset">RESET</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<script>
+    document.getElementById ("signup").innerHTML = " ";  
+    
+ </script>
+
+
+<%-include("partials/footer")-%>
+
+
+
+
+
